@@ -12,7 +12,7 @@ namespace DoAnATM
 {
     public partial class ProjectATM : Form
     {
-        
+
 
         public ProjectATM()
         {
@@ -26,7 +26,7 @@ namespace DoAnATM
             public int Col;
             public string KyTu;
 
-            public PointKT(string kyTu) {KyTu = kyTu; Row = -1; Col = -1;}
+            public PointKT(string kyTu) { KyTu = kyTu; Row = -1; Col = -1; }
 
             public PointKT(int row, int col, string kyTu)
             {
@@ -137,10 +137,10 @@ namespace DoAnATM
 
         #endregion
 
-        public string Preformatting()
+        public string Preformatting(string textPF)
         {
             // Bước 1: Xử lý chuỗi đầu vào
-            string textPF = new string(TextBox.Text
+            textPF = new string(InputText.Text
                 .ToUpper()
                 .Where(char.IsLetterOrDigit)
                 .ToArray());
@@ -186,6 +186,8 @@ namespace DoAnATM
 
             return sb.ToString();
         }
+
+
 
         #region Encryt
         public void EncryptionCases(ref PointKT point1, ref PointKT point2, int size)
@@ -244,6 +246,30 @@ namespace DoAnATM
 
         #region Decryt
 
+        private string DelX(string text)
+        {
+            text = new string(text
+                .Where(char.IsLetterOrDigit)
+                .ToArray());
+
+            StringBuilder sb = new StringBuilder(text);
+            // Xóa ký tự 'X' nằm giữa các ký tự giống nhau
+            for (int i = 1; i < text.Length - 1; i++)
+            {
+                if (sb[i] == 'X' && sb[i - 1] == sb[i + 1])
+                {
+                    sb.Remove(i, 1);
+                    i--; // Cập nhật lại độ dài chuỗi
+                }
+            }
+
+            // Xóa ký tự 'X' ở cuối chuỗi nếu có
+            if (sb.Length > 0 && sb[sb.Length - 1] == 'X')
+                sb.Remove(sb.Length - 1, 1);
+
+            return sb.ToString();
+        }
+
         public void DecryptionCases(ref PointKT point1, ref PointKT point2, int size)
         {
             if (point1.Row == point2.Row)
@@ -276,6 +302,10 @@ namespace DoAnATM
                 .Where(char.IsLetterOrDigit)
                 .ToArray());
 
+            if (textPre.Length % 2 != 0)
+            {
+                textPre += "X";
+            }
 
             for (int i = 0; i < textPre.Length; i += 2)
             {
@@ -289,30 +319,142 @@ namespace DoAnATM
 
                 result.Append(pointChar1.KyTu);
                 result.Append(pointChar2.KyTu);
-                result.Append(' ');
             }
 
-            return result.ToString().TrimEnd();
+            return DelX(result.ToString());
+        }
+
+        #endregion
+
+        #region RandomKey
+
+        private string RandomKeyFunc()
+        {
+            string key = (rdo5x5.Checked == true) ? "ABCDEFGHIKLMNOPQRSTUVWXYZ" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            Random Rand = new Random();
+            return new string(key.OrderBy(c => Rand.Next()).Take(10).ToArray());
+        }
+
+        #endregion
+
+        #region Btn_Click
+
+        private void EncryptBtn_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(InputText.Text))
+            {
+                MessageBox.Show("You have not entered anything!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string textPreFormatting = Preformatting(InputText.Text);
+            string textEncryp = Encrytion(textPreFormatting);
+            OutputTxt.Text = textEncryp;
+        }
+
+        private void DecryptBtn_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(InputText.Text))
+            {
+                MessageBox.Show("You have not entered anything!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string textPreFormatting = Preformatting(InputText.Text);
+            string textDecryp = Decrytion(textPreFormatting);
+            OutputTxt.Text = textDecryp;
+        }
+
+        private void ReverseBtn_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(OutputTxt.Text))
+            {
+                MessageBox.Show("You have not entered anything!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            string textDecryp = Decrytion(OutputTxt.Text);
+            InputText.Text = textDecryp;
+        }
+
+        private void RandomKeyBtn_Click(object sender, EventArgs e)
+        {
+            PlayfairKey.Text = RandomKeyFunc();
+        }
+
+        private void SelectFileBtn_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Title = "Select File";
+                ofd.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                ofd.Multiselect = false;
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    string path = ofd.FileName;
+
+                    try
+                    {
+                        string noidung = File.ReadAllText(path);
+                        InputText.Text = string.Empty;
+                        InputText.Text = noidung.Trim();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"An error occurred while reading the file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    }
+                }
+            }
+        }
+
+        private void ExportFileBtn_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(OutputTxt.Text.Trim()))
+            {
+                MessageBox.Show("Please add content before saving the file.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Title = "Save File";
+                saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+                saveFileDialog.DefaultExt = "txt";
+                saveFileDialog.AddExtension = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        string filePath = saveFileDialog.FileName;
+                        string content = OutputTxt.Text;
+
+                        File.WriteAllText(filePath, content);
+
+                        MessageBox.Show("File saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"An error occurred while saving the file:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        private void DelInputBtn_Click(object sender, EventArgs e)
+        {
+            InputText.Clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OutputTxt.Clear();
         }
 
         #endregion
 
         #region event
-        private void EncryptBtn_Click(object sender, EventArgs e)
-        {
-            string textPreFormatting = Preformatting();
-            string textEncryp = Encrytion(textPreFormatting);
-            EncryptPlayfair encryptPlayfair = new EncryptPlayfair(textPreFormatting, textEncryp);
-            encryptPlayfair.Show();
-        }
-
-        private void DecryptBtn_Click(object sender, EventArgs e)
-        {
-            string textPreFormatting = Preformatting();
-            string textDecryp = Decrytion(textPreFormatting);
-            DecryptPlayfair decryptPlayfair = new DecryptPlayfair(textDecryp);
-            decryptPlayfair.Show();
-        }
 
         private void PlayfairKey_TextChanged(object sender, EventArgs e)
         {
@@ -336,6 +478,12 @@ namespace DoAnATM
         #region RSA
 
         #endregion
+
+
+
+
+
+
 
 
 

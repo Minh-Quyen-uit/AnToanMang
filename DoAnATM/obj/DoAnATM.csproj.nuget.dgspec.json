@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DoAnATM\\DoAnATM.csproj": {}
+    "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\DoAnATM.csproj": {}
   },
   "projects": {
-    "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DoAnATM\\DoAnATM.csproj": {
+    "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\DoAnATM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DoAnATM\\DoAnATM.csproj",
+        "projectUniqueName": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\DoAnATM.csproj",
         "projectName": "DoAnATM",
-        "projectPath": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DoAnATM\\DoAnATM.csproj",
+        "projectPath": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\DoAnATM.csproj",
         "packagesPath": "C:\\Users\\MINH QUYEN\\.nuget\\packages\\",
-        "outputPath": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DoAnATM\\obj\\",
+        "outputPath": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
