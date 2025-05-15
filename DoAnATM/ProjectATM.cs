@@ -256,7 +256,7 @@ namespace DoAnATM
 
             StringBuilder sb = new StringBuilder(text);
             // Xóa ký tự 'X' nằm giữa các ký tự giống nhau
-            for (int i = 1; i < text.Length - 1; i++)
+            for (int i = 1; i < sb.Length - 1; i++)
             {
                 if (sb[i] == 'X' && sb[i - 1] == sb[i + 1])
                 {
@@ -1017,17 +1017,7 @@ namespace DoAnATM
             IsValueAccepted();
         }
 
-        private void RSATabControl_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (RSATabControl.SelectedIndex == 1)
-            {
-
-                ETxt.Enabled = true;
-                ETxt.ReadOnly = false;
-            }
-            else
-                ETxt.Enabled = false;
-        }
+        
 
         #endregion
 

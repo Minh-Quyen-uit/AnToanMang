@@ -430,7 +430,6 @@
             RSATabControl.SelectedIndex = 0;
             RSATabControl.Size = new Size(696, 300);
             RSATabControl.TabIndex = 0;
-            RSATabControl.SelectedIndexChanged += RSATabControl_SelectedIndexChanged;
             // 
             // EncryptPage
             // 
@@ -703,11 +702,9 @@
             // 
             // ETxt
             // 
-            ETxt.Enabled = false;
             ETxt.Location = new Point(245, 296);
             ETxt.Multiline = true;
             ETxt.Name = "ETxt";
-            ETxt.ReadOnly = true;
             ETxt.Size = new Size(313, 34);
             ETxt.TabIndex = 13;
             // 
