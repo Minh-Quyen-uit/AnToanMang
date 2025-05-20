@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoAnATM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b5c968bb8bb1b46ec41ee31c9ddaa8e1a0c0a0d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+538e3283db289c33919c2457a5d5dbd8ae204214")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoAnATM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoAnATM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|d:\\study_documents\\uit\\2024-ii\\nt101.p21_an_toan_mang_may_tinh\\project\\da\\doanatm\\projectatm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|solutionrelative:projectatm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|d:\\study_documents\\uit\\2024-ii\\nt101.p21_an_toan_mang_may_tinh\\project\\da\\doanatm\\rsaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|solutionrelative:rsaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|d:\\study_documents\\uit\\2024-ii\\nt101.p21_an_toan_mang_may_tinh\\project\\da\\doanatm\\projectatm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|solutionrelative:projectatm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|d:\\study_documents\\uit\\2024-ii\\nt101.p21_an_toan_mang_may_tinh\\project\\da\\doanatm\\projectatm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|solutionrelative:projectatm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|d:\\study_documents\\uit\\2024-ii\\nt101.p21_an_toan_mang_may_tinh\\project\\da\\doanatm\\rsaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE4C43E8-B3A2-459B-B665-0E5935AC4136}|DoAnATM.csproj|solutionrelative:rsaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,40 +35,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProjectATM.cs [Design]",
-              "DocumentMoniker": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\ProjectATM.cs",
-              "RelativeDocumentMoniker": "ProjectATM.cs",
-              "ToolTip": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\ProjectATM.cs [Design]",
-              "RelativeToolTip": "ProjectATM.cs [Design]",
+              "Title": "RSAForm.cs",
+              "DocumentMoniker": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\RSAForm.cs",
+              "RelativeDocumentMoniker": "RSAForm.cs",
+              "ToolTip": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\RSAForm.cs",
+              "RelativeToolTip": "RSAForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4CAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T12:44:28.58Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-20T01:34:08.558Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProjectATM.Designer.cs",
-              "DocumentMoniker": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\ProjectATM.Designer.cs",
-              "RelativeDocumentMoniker": "ProjectATM.Designer.cs",
-              "ToolTip": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\ProjectATM.Designer.cs",
-              "RelativeToolTip": "ProjectATM.Designer.cs",
-              "ViewState": "AgIAAJ0BAAAAAAAAAAAmwK8BAAAnAAAAAAAAAA==",
+              "Title": "RSAForm.cs [Design]",
+              "DocumentMoniker": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\RSAForm.cs",
+              "RelativeDocumentMoniker": "RSAForm.cs",
+              "ToolTip": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\RSAForm.cs [Design]",
+              "RelativeToolTip": "RSAForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T12:44:18.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectATM.cs",
-              "DocumentMoniker": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\ProjectATM.cs",
-              "RelativeDocumentMoniker": "ProjectATM.cs",
-              "ToolTip": "D:\\study_documents\\UIT\\2024-II\\NT101.P21_An_Toan_Mang_May_Tinh\\Project\\DA\\DoAnATM\\ProjectATM.cs",
-              "RelativeToolTip": "ProjectATM.cs",
-              "ViewState": "AgIAAOgDAAAAAAAAAAAgwPsDAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T13:45:06.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T01:34:06.889Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -22,7 +22,6 @@ D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnAT
 D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\bin\Debug\net8.0-windows\DoAnATM.runtimeconfig.json
 D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\bin\Debug\net8.0-windows\DoAnATM.dll
 D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\bin\Debug\net8.0-windows\DoAnATM.pdb
-D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.ProjectATM.resources
 D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.Properties.Resources.resources
 D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.csproj.GenerateResource.cache
 D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.GeneratedMSBuildEditorConfig.editorconfig
@@ -35,3 +34,12 @@ D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnAT
 D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.pdb
 D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.genruntimeconfig.cache
 D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\ref\DoAnATM.dll
+D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.PlayFairForm.resources
+D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\bin\Debug\net8.0-windows\Bunifu.UI.WinForms.Deprecated.dll
+D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\bin\Debug\net8.0-windows\MetroFramework.Design.dll
+D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\bin\Debug\net8.0-windows\MetroFramework.Fonts.dll
+D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\bin\Debug\net8.0-windows\MetroFramework.dll
+D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.csproj.AssemblyReference.cache
+D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.ProjectATM.resources
+D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.csproj.Up2Date
+D:\study_documents\UIT\2024-II\NT101.P21_An_Toan_Mang_May_Tinh\Project\DA\DoAnATM\obj\Debug\net8.0-windows\DoAnATM.RSAForm.resources
