@@ -86,6 +86,7 @@
             DelOutputBtn.TabIndex = 7;
             DelOutputBtn.Text = "Xóa";
             DelOutputBtn.UseVisualStyleBackColor = false;
+            DelOutputBtn.Click += DelOutputBtn_Click;
             // 
             // SaveFilePFBtn
             // 
@@ -96,6 +97,7 @@
             SaveFilePFBtn.TabIndex = 6;
             SaveFilePFBtn.Text = "Lưu File";
             SaveFilePFBtn.UseVisualStyleBackColor = true;
+            SaveFilePFBtn.Click += SaveFilePFBtn_Click;
             // 
             // DelInputBtn
             // 
@@ -108,6 +110,7 @@
             DelInputBtn.TabIndex = 5;
             DelInputBtn.Text = "Xóa ";
             DelInputBtn.UseVisualStyleBackColor = false;
+            DelInputBtn.Click += DelInputBtn_Click;
             // 
             // SelectFilePFBtn
             // 
@@ -118,6 +121,7 @@
             SelectFilePFBtn.TabIndex = 4;
             SelectFilePFBtn.Text = "Chọn File";
             SelectFilePFBtn.UseVisualStyleBackColor = true;
+            SelectFilePFBtn.Click += SelectFilePFBtn_Click;
             // 
             // OutputTxt
             // 
@@ -174,6 +178,7 @@
             ReversePFBtn.TabIndex = 2;
             ReversePFBtn.Text = "Đảo ngược";
             ReversePFBtn.UseVisualStyleBackColor = true;
+            ReversePFBtn.Click += ReversePFBtn_Click;
             // 
             // DecryptPFBtn
             // 
@@ -184,6 +189,7 @@
             DecryptPFBtn.TabIndex = 1;
             DecryptPFBtn.Text = "Giải mã";
             DecryptPFBtn.UseVisualStyleBackColor = true;
+            DecryptPFBtn.Click += DecryptPFBtn_Click;
             // 
             // EncryptPFBtn
             // 
@@ -194,6 +200,7 @@
             EncryptPFBtn.TabIndex = 0;
             EncryptPFBtn.Text = "Mã hóa";
             EncryptPFBtn.UseVisualStyleBackColor = true;
+            EncryptPFBtn.Click += EncryptPFBtn_Click;
             // 
             // PlayfairKeyGR
             // 
@@ -224,6 +231,7 @@
             DelKeyPFBtn.TabIndex = 6;
             DelKeyPFBtn.Text = "Xóa Khóa";
             DelKeyPFBtn.UseVisualStyleBackColor = false;
+            DelKeyPFBtn.Click += DelKeyPFBtn_Click;
             // 
             // label2
             // 
@@ -243,6 +251,7 @@
             RandomKeyPFBtn.TabIndex = 3;
             RandomKeyPFBtn.Text = "Khóa ngẫu nhiên";
             RandomKeyPFBtn.UseVisualStyleBackColor = true;
+            RandomKeyPFBtn.Click += RandomKeyPFBtn_Click;
             // 
             // Size6x6
             // 

@@ -339,7 +339,7 @@ namespace DoAnATM
 
         #region Btn_Click
 
-        private void EncryptBtn_Click(object sender, EventArgs e)
+        private void EncryptPFBtn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(InputTxt.Text))
             {
@@ -352,7 +352,7 @@ namespace DoAnATM
             OutputTxt.Text = textEncryp;
         }
 
-        private void DecryptBtn_Click(object sender, EventArgs e)
+        private void DecryptPFBtn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(InputTxt.Text))
             {
@@ -365,7 +365,7 @@ namespace DoAnATM
             OutputTxt.Text = textDecryp;
         }
 
-        private void ReverseBtn_Click(object sender, EventArgs e)
+        private void ReversePFBtn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(OutputTxt.Text))
             {
@@ -376,12 +376,12 @@ namespace DoAnATM
             InputTxt.Text = textDecryp;
         }
 
-        private void RandomKeyBtn_Click(object sender, EventArgs e)
+        private void RandomKeyPFBtn_Click(object sender, EventArgs e)
         {
             PlayfairKey.Text = RandomKeyFunc();
         }
 
-        private void SelectFileBtn_Click(object sender, EventArgs e)
+        private void SelectFilePFBtn_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
@@ -442,7 +442,7 @@ namespace DoAnATM
             }
         }
 
-        private void DelKeyBtn_Click(object sender, EventArgs e)
+        private void DelKeyPFBtn_Click(object sender, EventArgs e)
         {
             PlayfairKey.Clear();
         }
@@ -502,6 +502,7 @@ namespace DoAnATM
         }
 
         #endregion
+
 
     }
 }
